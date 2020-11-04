@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></head>
+        <script> </script>
+<style>
+  div.lunbo3{margin-left:9px;float:left}
+ * {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}.mySlides1 {display:none}.mySlides2 {display:none}.mySlides3 {display:none}
+/* 幻灯片容器 */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left:9px;float:left;
+}
+/* 下一张 & 上一张 按钮 */
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:25px;
+  height:35px;
+  margin-top: -22px;
+  padding:5px 0 0 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 80px 80px 0;
+}
+
+/* 定位 "下一张" 按钮靠右 */
+.next {
+  right: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:25px;
+  height:35px;
+  margin-top: -22px;
+  padding:5px 0 0 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 80px 0px 0px 80px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.prev1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* 标记符号 */
+.dot {
+  cursor:pointer;
+  height: 9px;
+  width: 9px;
+  margin:0 0px 0 0;padding: 0;
+  background-color: #ffffff66;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  height: 12px;
+  width: 12px;
+  border:2px solid #9b9b9b67;
+  background-color: #ffffff;
+  
+}
+
+/* 淡出动画 */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+.prev1{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:25px;
+  height:35px;
+  margin-top: -54px;
+  padding:5px 0 0 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 80px 80px 0;
+  display:none;
+}
+
+/* 定位 "下一张" 按钮靠右 */
+.next1 {
+  display:none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:25px;
+  height:35px;
+  margin-top: -54px;
+  margin-left: 165px;
+  padding:5px 0 0 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 80px 0px 0px 80px;
+}
+
+    
+</style>
+
+
+
+<body>
+ 
+    <div class="slideshow-container" id="wrap">
+        <div  class="mySlides  fade">
+          <img  src="https://img12.360buyimg.com/da/s590x470_jfs/t1/97543/32/8140/86550/5e01c440E41860604/51e8ccd5639826f2.jpg.webp " style="width:100%">
+        </div>
+      
+        <div  class="mySlides fade">
+          <img  src="https://img13.360buyimg.com/da/s590x470_jfs/t1/39400/14/9810/228403/5d11cc90E1a234431/0a026a502e2cf43f.jpg.webp" style="width:100%">
+        </div>
+      
+        <div  class="mySlides fade">
+          <img  src="https://img30.360buyimg.com/da/s590x470_jfs/t1/105188/2/8166/61826/5e01c0a8Eaeadaf61/f35b7e0da054213a.jpg.webp" style="width:100%">
+        </div>
+      
+        <div  class="mySlides fade">
+            <img  src="https://img30.360buyimg.com/da/s590x470_jfs/t1/149303/6/9577/101662/5f72df07Ea3cbdb35/cb99699befac60c8.jpg.webp " style="width:100%">
+          </div>
+        
+          <div  class="mySlides fade">
+            <img  src="https://imgcps.jd.com/ling4/6207857/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/p-5bd8253082acdd181d02f9ee/b719339b/cr/s/q.jpg" style="width:100%">
+          </div>
+        
+          <div  class="mySlides fade">
+            <img  src="https://imgcps.jd.com/ling4/5895210/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/p-5bd8253082acdd181d02fa17/40d7b20b/cr/s/q.jpg" style="width:100%">
+          </div>
+
+          <div  class="mySlides fade">
+            <img  src="https://imgcps.jd.com/ling4/44234164926/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/p-5bd8253082acdd181d02fa75/67bb8cd0/cr/s/q.jpg" style="width:100%">
+          </div>
+        
+          <div  class="mySlides fade">
+            <img  src="https://imgcps.jd.com/ling4/100007111222/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/p-5bd8253082acdd181d02f9f7/f8bfcdf9/cr/s/q.jpg" style="width:100%">
+          </div>
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div style="position: absolute;bottom: 24px;left:30px;width:130px;padding:0;margin:0;height:15px;float:left">
+            <i class="dot" onclick="currentSlide(1)" onmouseover="currentSlide(1)"></i> 
+            <i class="dot" onclick="currentSlide(2)" onmouseover="currentSlide(2)"></i> 
+            <i class="dot" onclick="currentSlide(3)" onmouseover="currentSlide(3)"></i> 
+            <i class="dot" onclick="currentSlide(4)" onmouseover="currentSlide(4)"></i> 
+            <i class="dot" onclick="currentSlide(5)" onmouseover="currentSlide(5)"></i> 
+            <i class="dot" onclick="currentSlide(6)" onmouseover="currentSlide(6)"></i> 
+            <i class="dot" onclick="currentSlide(7)" onmouseover="currentSlide(7)"></i> 
+            <i class="dot" onclick="currentSlide(8)" onmouseover="currentSlide(8)"></i> 
+          </div>
+      </div>
+
+
+                    <div class="lunbo3"> 
+                 <div style="margin-left:0;width: 190px;height: 150px;">
+                  <div  class="mySlides1">
+                    <img  src="https://img14.360buyimg.com/babel/s380x300_jfs/t1/122150/38/13709/66273/5f719ebfEe687a20e/02dbeccaf8e488b3.jpg.webp" style="width:100%">
+                  </div>
+                  <div  class="mySlides1">
+                    <img  src="https://img13.360buyimg.com/babel/s380x300_jfs/t1/115393/36/18653/87786/5f73e143E255be83f/89852715e23a7a49.jpg.webp" style="width:100%">
+                  </div>
+                  <div  class="mySlides1">
+                    <img  src="https://img30.360buyimg.com/babel/s380x300_jfs/t1/115267/35/19134/57567/5f718196Ea704bd8b/09f05bc7e041c867.jpg.webp" style="width:100%">
+                  </div>
+                </div>
+                
+                <div style="margin:10px 0 0 0;width: 190px;height: 150px;">
+                  <div  class="mySlides2">
+                    <img  src="https://img30.360buyimg.com/babel/s380x300_jfs/t1/128127/12/13601/53242/5f700ac2Eb8489b75/8f6b0bec7ba57509.jpg.webp" style="width:100%">
+                  </div>
+                  <div  class="mySlides2">
+                    <img  src="https://img20.360buyimg.com/babel/s380x300_jfs/t1/139709/21/9732/48971/5f73eb73Eff242e74/d042f83913b8eb15.jpg.webp" style="width:100%">
+                  </div>
+                  <div  class="mySlides2">
+                    <img  src="https://img11.360buyimg.com/babel/s380x300_jfs/t1/152839/31/1150/60040/5f731885Ec7325cf6/8d655e19a0850015.jpg.webp" style="width:100%">
+                  </div>
+                  <a class="prev1" onclick="plusSlidesw(-1)">❮</a>
+                  <a class="next1" onclick="plusSlidesw(1)">❯</a>
+                </div>
+                
+                <div style="margin:10px 0 0 0;margin-top:10dp;width: 190px;height: 150px;">
+                  <div  class="mySlides3">
+                    <img  src="https://img30.360buyimg.com/babel/s380x300_jfs/t1/116304/39/19737/68206/5f7fca20E0ea6c9d9/dc3cdc50bb3ce4e4.jpg.webp" style="width:100%">
+                  </div>
+                  <div  class="mySlides3">
+                    <img  src="https://img11.360buyimg.com/babel/s380x300_jfs/t1/141479/6/9508/60430/5f71ac3dEd3dfcb8e/1c653d263716af08.jpg.webp" style="width:100%">
+                  </div>
+                  <div  class="mySlides3">
+                    <img  src="https://img12.360buyimg.com/babel/s380x300_jfs/t1/155429/39/1131/72215/5f73e40dE7b0abfad/8e24a7275e903c19.jpg.webp" style="width:100%">
+                  </div>
+                </div></div>
+
+
+
+
+
+
+      <script>
+
+    var slideIndex = 0;        showSlides(slideIndex);
+
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+      clearTimeout(time1);
+      setTimeout(showSlides1, 4000); 
+    }
+     
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+      clearTimeout(time1);
+      setTimeout(showSlides1, 4000); 
+    }
+    showSlides1() ;
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+  
+    }function showSlides1() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    time1=setTimeout(showSlides1, 4000); // 切换时间为 2 秒
+}
+
+    // 鼠标划过整个容器时停止自动播放
+    wrap.onmouseover = function() {
+                clearTimeout(time1);
+            }
+            // 鼠标离开整个容器时继续播放至下一张
+            wrap.onmouseout = function() {
+                time1=setTimeout(showSlides1, 4000);
+            }
+          
+var slideIndexw = 0;showSlidesw(slideIndexw);
+function plusSlidesw(n) {
+  showSlidesw(slideIndexw += n);
+  showSlidesw2(slideIndexw2 += n);
+  showSlidesw3(slideIndexw3 += n);
+}
+function showSlidesw(n) {
+  var i;
+  var slidesw = document.getElementsByClassName("mySlides1");
+  if (n > slidesw.length) {slideIndexw = 1} 
+  if (n < 1) {slideIndexw = slidesw.length}
+  for (i = 0; i < slidesw.length; i++) {
+      slidesw[i].style.display = "none"; 
+  }
+  slidesw[slideIndexw-1].style.display = "block"; 
+}
+var slideIndexw2 = 0;showSlidesw2(slideIndexw2);
+function showSlidesw2(n) {
+  var i;
+  var slidesw2 = document.getElementsByClassName("mySlides2");
+  if (n > slidesw2.length) {slideIndexw2 = 1} 
+  if (n < 1) {slideIndexw2 = slidesw2.length}
+  for (i = 0; i < slidesw2.length; i++) {
+      slidesw2[i].style.display = "none"; 
+  }
+  slidesw2[slideIndexw2-1].style.display = "block"; 
+}  
+var slideIndexw3 = 0;showSlidesw3(slideIndexw3);
+function showSlidesw3(n) {
+  var i;
+  var slidesw3 = document.getElementsByClassName("mySlides3");
+  if (n > slidesw3.length) {slideIndexw3 = 1} 
+  if (n < 1) {slideIndexw3 = slidesw3.length}
+  for (i = 0; i < slidesw3.length; i++) {
+      slidesw3[i].style.display = "none"; 
+  }
+  slidesw3[slideIndexw3-1].style.display = "block"; 
+}
+        </script>
+</body>
+
+</html>

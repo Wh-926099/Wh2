@@ -1,0 +1,121 @@
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}.mySlides1 {display:none}.mySlides2 {display:none}.mySlides3 {display:none}
+/* 幻灯片容器 */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left:9px;float:left;
+}
+/* 下一张 & 上一张 按钮 */
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:25px;
+  height:35px;
+  margin-top: -22px;
+  padding:5px 0 0 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 80px 80px 0;
+  background-color: rgba(0, 0, 0, 0.150);
+}
+
+/* 定位 "下一张" 按钮靠右 */
+.next {
+  right: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:25px;
+  height:35px;
+  margin-top: -22px;
+  padding:5px 0 0 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 80px 0px 0px 80px;
+  background-color: rgba(0, 0, 0, 0.150);
+}
+
+
+/* 标记符号 */
+.dot {
+  cursor:pointer;
+  height: 9px;
+  width: 9px;
+  margin:0 0px 0 0;padding: 0;
+  background-color: #ffffff66;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  height: 12px;
+  width: 12px;
+  border:2px solid #9b9b9b67;
+  background-color: #ffffff;
+  
+}
+
+/* 淡出动画 */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+.prev1{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:25px;
+  height:35px;
+  margin-top: -22px;
+  padding:5px 0 0 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 80px 80px 0;
+  background-color: rgba(0, 0, 0, 0.150);
+}
+
+/* 定位 "下一张" 按钮靠右 */
+.next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:25px;
+  height:35px;
+  margin-top:  -22px;
+  margin-left: 165px;
+  padding:5px 0 0 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 80px 0px 0px 80px;
+  background-color: rgba(0, 0, 0, 0.150);
+}
+.prev:hover,.next:hover,.prev1:hover,.next1:hover{
+  color:white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.308);
+}
+.lb2img:hover{opacity:0.85}
